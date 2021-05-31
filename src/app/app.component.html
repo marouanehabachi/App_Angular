@@ -1,0 +1,33 @@
+<div>
+
+  <p id="hello">Bienvenue</p>
+
+
+  <input id="List" routerLink="/add" routerLinkActive="active" 
+   onclick="document.getElementById('moral').style.display='none';
+    document.getElementById('hello').style.display='none';
+     document.getElementById('List').style.display='none'; 
+     document.getElementById('admin').style.display='none'" 
+     class="styled" type="button" value="Personne physique">
+
+
+  <input id="moral" routerLink="/add" routerLinkActive="active"
+  onclick="document.getElementById('moral').style.display='none'; 
+  document.getElementById('hello').style.display='none'; 
+  document.getElementById('List').style.display='none'; 
+  document.getElementById('admin').style.display='none'"
+  class="styled"  type="button" value="Personne moral">
+  
+  <input id="admin" routerLink="/admin" routerLinkActive="active"
+   onclick="document.getElementById('moral').style.display='none';
+    document.getElementById('hello').style.display='none';
+     document.getElementById('List').style.display='none';
+      document.getElementById('admin').style.display='none'"
+      class="styled" type="button" value="admin">
+
+       
+</div>
+<p id="entreprise"> by AMMIYA CONSEIL</p>
+  
+<router-outlet></router-outlet>
+

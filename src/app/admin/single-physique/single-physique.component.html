@@ -1,0 +1,13 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading">
+  <button class="btn btn-link" (click)="onGoBack()"><< Retour</button>
+  <div class="single-physique-pane">
+    <div class="single-physique-info">
+      <h1>{{ physique?.nom }}</h1>
+      <h2 class="single-physique-telephone">{{ physique?.telephone }}</h2>
+      <p>{{ physique?.prenom }}</p>
+      <button class="btn btn-success m-1" (click)="onModify()" [disabled]="userId !== physique?.userId">Modifier</button>
+      <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="userId !== physique?.userId">Supprimer</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+#carte {
+    position: absolute;  
+    left: 500px;
+    top: 250px;
+    color: rgb(5, 10, 10); 
+    font-size: 180%;
+}
