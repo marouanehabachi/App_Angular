@@ -5,11 +5,22 @@
        *ngFor="let physique of stuff"
        [ngClass]="{'open': physique._id === chosenId}"
        (click)="onProductClicked(physique._id)">
-    <div class="physique-info">
-      <h3>
-        {{ physique.nom }}
-      </h3>
-      <h5>{{ physique.telephone }}</h5>
+    <div >
+      
+      <table style="width:200%">
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <th>Telephone</th>
+        </tr>
+        <tr>
+          <td>{{ physique.nom}}</td>
+          <td>{{ physique.prenom}}</td>
+          <td>{{ physique.mail}}</td>
+         <td>{{ physique.telephone}}</td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>

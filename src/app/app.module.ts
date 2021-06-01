@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
 import { NewPhysiqueComponent } from './new-physique/new-physique.component';
 import { PayementComponent } from './payement/payement.component';
+import { InformationComponent } from './information/information.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PayementComponent } from './payement/payement.component';
     SinglePhysiqueComponent,
     ModifyPhysiqueComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,

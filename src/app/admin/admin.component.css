@@ -12,6 +12,10 @@
     color: rgb(5, 10, 10);
     border-radius: 50%;
 }
+#table{
+    left: 700px;
+    top: 1000px;
+}
 .styled {
     border: 0;
     line-height: 3;

@@ -1,20 +1,20 @@
-#OUI{
+#physi{
     position: absolute; 
-    left: 200px;
+    left: 350px;
     top: 200px;
     color: rgb(5, 10, 10);
     border-radius: 50%;
 }
-#NON{
+#morl{
     position: absolute; 
     left: 730px;
     top: 200px;
     color: rgb(5, 10, 10);
     border-radius: 50%;
 }
-#recu {
+#personne {
   position: absolute;  
-  left: 500px;
+  left: 550px;
   top:150px;
   color: rgb(5, 10, 10); 
   font-size: 200%;  

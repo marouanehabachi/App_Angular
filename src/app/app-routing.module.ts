@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddComponent } from './add/add.component';
 import { Add1Component } from './add1/add1.component';
+import { InformationComponent } from './information/information.component';
 import { AddautreComponent } from './addautre/addautre.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './admin/auth/login/login.component';
@@ -16,6 +17,7 @@ import { AuthGuard } from './services/auth-guard.service';
 const routes: Routes = [
   { path: 'add', component: AddComponent},
   { path: 'add1', component: Add1Component},
+  { path: 'information', component: InformationComponent},
   { path: 'addaut', component: AddautreComponent},
   { path: 'payement', component: PayementComponent},
   { path: 'admin', component: AdminComponent},
@@ -35,7 +37,7 @@ const routes: Routes = [
   providers: [AuthGuard]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AddComponent, Add1Component, AddautreComponent , 
+export const routingComponents = [AddComponent, Add1Component, AddautreComponent , InformationComponent, 
 PayementComponent, AdminComponent, NewPhysiqueComponent, StuffListComponent, SinglePhysiqueComponent,
 ModifyPhysiqueComponent, LoginComponent, SignupComponent]
 

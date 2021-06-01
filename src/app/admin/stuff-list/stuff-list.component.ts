@@ -13,11 +13,10 @@ import { Router } from '@angular/router';
 export class StuffListComponent implements OnInit, OnDestroy {
 
   public stuff: Physique[] = [];
-  public part: number;
   public loading: boolean;
 
   private stuffSub: Subscription;
-  private partSub: Subscription;
+  
 
   constructor(private state: StateService,
               private stuffService: StuffService,
@@ -32,22 +31,17 @@ export class StuffListComponent implements OnInit, OnDestroy {
         this.loading = false;
       }
     );
-    this.partSub = this.state.part$.subscribe(
-      (part) => {
-        this.part = part;
-      }
-    );
+
     this.stuffService.getStuff();
   }
 
   onProductClicked(id: string) {
-    if (this.part === 2) {
+    
       this.router.navigate(['/admin/physique/' + id]);
-  }}
+  }
 
   ngOnDestroy() {
     this.stuffSub.unsubscribe();
-    this.partSub.unsubscribe();
   }
 
 }
