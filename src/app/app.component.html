@@ -1,10 +1,16 @@
-<h1 align="center" id="hello">Bienvenue</h1>
+<section class="container-fluid px-5">
+  <div class="mx-5 my-5 d-flex justify-content-between">
+    <img src="../assets/icons/tactile.svg" class="img" alt="">
+    <div class="text-center">
+      <h4 id="hello" class="text-uppercase">je soutiens</h4>
+      <h1 id="hello">Union des Musulmans de Grigny</h1>
+    </div>
+    <p class="mr-auto">{{now | date: 'hh:mm:ss a'}}</p>
+  </div>
 
-<nav id="List" align="center"> 
-  <a routerLink="/add" routerLinkActive="active" onclick="document.getElementById('List').style.display='none'; document.getElementById('hello').style.display='none'" > Cliquer pour faire un don </a>
-</nav> 
-<router-outlet></router-outlet>
+  <!-- <nav id="List" align="center"> 
+    <a routerLink="/add" routerLinkActive="active" onclick="document.getElementById('List').style.display='none'; document.getElementById('hello').style.display='none'" > Cliquer pour faire un don </a>
+  </nav>  -->
 
-
-
-
+  <router-outlet></router-outlet>
+</section>

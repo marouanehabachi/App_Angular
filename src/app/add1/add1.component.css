@@ -1,0 +1,38 @@
+.don {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.btn-don,
+.btn-don-oui {
+  padding: 2rem;
+  font-size: 2rem;
+  height: 27vh;
+  width: 27vh;
+  border: 3px solid #878787;
+  border-radius: 50rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.btn-don span,
+.btn-don-oui span {
+  text-decoration: none;
+  position: absolute;
+  top: 36%;
+  bottom: 36%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+.btn-don:hover {
+  background: red;
+  color: white;
+}
+
+.btn-don-oui:hover {
+  background: rgb(60, 177, 255);
+  color: white;
+}

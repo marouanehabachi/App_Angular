@@ -11,5 +11,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'route-demo';
+  public now: Date = new Date();
+
+  constructor() {
+    setInterval(() => {
+      this.now = new Date();
+    }, 1);
+  }
 }
 

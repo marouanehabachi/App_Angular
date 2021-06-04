@@ -1,0 +1,64 @@
+.img-card {
+  width: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border-radius: 1.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.shadow {
+  box-shadow: 0 0rem 2rem rgba(0, 0, 0, .20) !important;
+}
+
+.cards {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.donate div {
+  padding: 2rem;
+  font-size: 2rem;
+  height: 27vh;
+  width: 27vh;
+  border: 3px solid #878787;
+  border-radius: 50rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.donate div:hover{
+  background: #cee9ff;
+  color: #00579e;
+  border: 3px solid #00579e;
+}
+
+.donate span {
+  text-decoration: none;
+  position: absolute;
+  top: 36%;
+  bottom: 36%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+.fa-arrow-left {
+  font-size: 2rem;
+}
+
+.btn-re {
+  height: 5rem;
+  width: 3rem;
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  z-index: 1;
+  left: -2.6rem !important;
+  top: 38%;
+}
