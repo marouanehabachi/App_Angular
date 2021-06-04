@@ -1,0 +1,39 @@
+#OUI{
+    position: absolute; 
+    left: 200px;
+    top: 200px;
+    color: rgb(5, 10, 10);
+    border-radius: 50%;
+}
+#NON{
+    position: absolute; 
+    left: 730px;
+    top: 200px;
+    color: rgb(5, 10, 10);
+    border-radius: 50%;
+}
+#recu {
+  position: absolute;  
+  left: 500px;
+  top:150px;
+  color: rgb(5, 10, 10); 
+  font-size: 200%;  
+}
+
+.styled {
+  border: 0;
+  line-height: 3;
+  padding: 0 20px;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 1px 1px 1px rgb(3, 2, 2);  */
+  border-radius: 1px; 
+  background-color: rgba(255, 255, 255);
+  background-image: linear-gradient(to top left,
+                                    rgba(255, 255, 255),
+                                    rgb(255, 255, 255) 30%,
+                                    rgb(255, 255, 255));
+  box-shadow: inset 2px 2px 3px rgba(4, 5, 4, 0.6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}

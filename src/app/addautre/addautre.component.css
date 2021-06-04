@@ -1,0 +1,36 @@
+#montant{
+    position: absolute; 
+    left: 630px;
+    top: 250px;
+}
+#VALIDER{
+    position: absolute; 
+    left: 680px;
+    top: 290px;
+    color: rgb(5, 10, 10);
+    border-radius: 50%;
+}
+#mt {
+  position: absolute;  
+  left: 575px;
+  top: 200px;
+  color: rgb(5, 10, 10); 
+  font-size: 200%;  
+}
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(20, 63, 0);
+    text-shadow: 1px 1px 1px rgb(248, 248, 255); 
+    border-radius: 10px; 
+    background-color: rgb(232, 255, 221);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
