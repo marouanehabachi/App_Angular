@@ -1,0 +1,30 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div id="NEW" *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
+  <form [formGroup]="moralForm">
+    <div class="form-group">
+      <label for="entreprise">Entreprise</label>
+      <input type="text" id="entreprise" formControlName="entreprise" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="adresse">Adresse</label>
+      <input type="text" id="adresse" formControlName="adresse" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="mail">Adresse Email</label>
+      <input type="text" id="mail" formControlName="mail" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="telephone">Numéro De Téléphone</label>
+      <input type="number" id="telephone" class="form-control" formControlName="telephone">
+    </div>
+    <button routerLink="/payement" class="btn btn-primary" (click)="onSubmit()" [disabled]="moralForm.invalid">Valider</button>
+    <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>
+<br><br><br>
+<div class="text-center flex-grow-1 bd-highlight">
+  <h6 class="text-uppercase">Le remplissage du formulaire implique votre consentement pour recevoir de futures communications</h6>
+</div>
+<button class="btn-re" routerLink="/information">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

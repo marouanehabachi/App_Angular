@@ -1,0 +1,33 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<p class="text-center" *ngIf="stuffM.length <= 0 && !loading">aucune entreprise</p>
+<div class="" *ngIf="stuffM.length >= 0">
+  <div class="moral-pane">
+    <div class="moral-info">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Entreprise</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telephone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let moral of stuffM; let i = index" [ngClass]="{'open': moral._id === chosenId}"
+          (click)="onProductClicked(moral._id)">
+            <th scope="row">{{ i }}</th>
+            <td>{{ moral.entreprise}}</td>
+            <td>{{ moral.adresse}}</td>
+            <td>{{ moral.mail}}</td>
+            <td>{{ moral.telephone}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<button class="btn-re" routerLink="/informationlog">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

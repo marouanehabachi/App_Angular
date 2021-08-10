@@ -9,7 +9,10 @@
       <label for="password">Mot de passe</label>
       <input type="password" id="password" formControlName="password" class="form-control">
     </div>
-    <button class="btn btn-success" (click)="onSignup()" [disabled]="signupForm.invalid">Inscription</button>
+    <button class="btn btn-success" (click)="onSignup()" [disabled]="signupForm.invalid">S'enregistrer</button>
   </form>
   <p>{{ errorMessage }}</p>
 </div>
+<button class="btn-re" routerLink="/admin">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

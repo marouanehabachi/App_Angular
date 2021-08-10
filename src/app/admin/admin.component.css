@@ -1,40 +1,109 @@
-#signup{
-    position: absolute; 
-    left: 400px;
-    top: 270px;
-    color: rgb(5, 10, 10);
-    border-radius: 50%;
+.don {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .btn-don,
+  .btn-don-oui {
+    padding: 2rem;
+    font-size: 2rem;
+    height: 27vh;
+    width: 27vh;
+    border: 3px solid #878787;
+    border-radius: 50rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .btn-don span,
+  .btn-don-oui span {
+    text-decoration: none;
+    position: absolute;
+    top: 36%;
+    bottom: 36%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 2.5rem;
+  }
+  
+  .btn-don:hover {
+    background: red;
+    color: white;
+  }
+  
+  .btn-don-oui:hover {
+    background: rgb(60, 177, 255);
+    color: white;
+  }
+  
+  /*---------- Button prev ----------*/
+  
+  .fa-arrow-left {
+    font-size: 2rem;
+  }
+  
+  .btn-re {
+    height: 5rem;
+    width: 3rem;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    z-index: 1;
+    left: 0 !important;
+    top: 49%;
+  }
+#ammiya{
+    position: absolute;
+    left: 1350px;
+    top:620px;
 }
-#login{
-    position: absolute; 
-    left: 700px;
-    top: 270px;
-    color: rgb(5, 10, 10);
-    border-radius: 50%;
-}
-.styled {
-    border: 0;
-    line-height: 3;
-    padding: 0 20px;
-    font-size: 3rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    /* text-shadow: 1px 1px 1px rgb(3, 2, 2);  */
-    border-radius: 1px; 
-    background-color: rgba(255, 255, 255);
-    background-image: linear-gradient(to top left,
-                                      rgba(255, 255, 255),
-                                      rgb(255, 255, 255) 30%,
-                                      rgb(255, 255, 255));
-    box-shadow: inset 2px 2px 3px rgba(4, 5, 4, 0.6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+.img-card {
+  width: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#hello {
-    position: absolute;  
-    left: 500px;
-    top: 150px;
-    color: rgb(5, 10, 10); 
-    font-size: 400%;
-    
-  }
+.card {
+  border-radius: 1.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.donate div {
+  padding: 2rem;
+  font-size: 2rem;
+  height: 27vh;
+  width: 27vh;
+  border: 3px solid #878787;
+  border-radius: 50rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.donate div:hover{
+  background: #cee9ff;
+  color: #00579e;
+  border: 3px solid #00579e;
+}
+
+.donate span {
+  text-decoration: none;
+  position: absolute;
+  top: 36%;
+  bottom: 36%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+.shadow {
+  box-shadow: 0 0rem 2rem rgba(0, 0, 0, .20) !important;
+}
+
+.cards {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+

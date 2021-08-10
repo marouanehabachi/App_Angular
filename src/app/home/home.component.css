@@ -1,0 +1,30 @@
+.img-card {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 1.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.card:hover {
+  background: #cee9ff;
+}
+
+.shadow {
+  box-shadow: 0 0rem 2rem rgba(0, 0, 0, .20) !important;
+}
+#activite{
+  height : 100%;
+}
+#ALIMENTAIRE{
+  height : 100%;
+}
+

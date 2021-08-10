@@ -1,9 +1,19 @@
-<p id="recu"> Voulez vous un recu ? </p>
-
-      <input id="OUI" routerLink="/information" routerLinkActive="active"
-       class="styled" type="button" value="Laisser vos coordonnées">
-       
-       <input id="NON" routerLink="/payement" routerLinkActive="active"
-       class="styled" type="button" value="Accéder au payement">
-       
-<router-outlet></router-outlet>
+<button class="btn-re" routerLink="/add">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>
+<div align="center" class="don d-flex justify-content-center">
+  <div align="center" routerLink="/information" role="button" class="btn-don-oui mx-4">
+    <span> Laisser vos coordonnées </span>
+  </div>
+  <div align="center" routerLink="/payement" role="button" class="btn-don mx-4">
+    <span> Accéder au paiement </span>
+  </div>
+</div>
+<div class="d-flex bd-highlight py-5">
+  <div class="text-center flex-grow-1 bd-highlight">
+    <h3 class="text-uppercase">Voulez vous un reçu ?</h3>
+  </div>
+  <div class="bd-highlight">
+    <h6 class="text-uppercase">by ammiya conseil</h6>
+  </div>
+</div>

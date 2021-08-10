@@ -2,3 +2,16 @@
     left: 150px;
     top: -250px;
 }
+.fa-arrow-left {
+    font-size: 2rem;
+  }
+  
+.btn-re {
+    height: 5rem;
+    width: 3rem;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    z-index: 1;
+    left: 0 !important;
+    top: 49%;
+  }

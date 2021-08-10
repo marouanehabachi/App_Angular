@@ -7,16 +7,14 @@ import { Physique } from '../models/Physique.model';
   providedIn: 'root'
 })
 export class StuffService {
-
   constructor(private http: HttpClient) { }
-
   private stuff: Physique[] = [
     {
       _id: '324sdfmoih3',
       nom: 'chakir',
       prenom: 'mohamed',
       mail: 'mohamad@test.com',
-      telephone: 33622222222,
+      telephone: '33622222222',
       userId: 'will'
     },
     {
@@ -24,7 +22,7 @@ export class StuffService {
       nom: 'chare',
       prenom: 'simo',
       mail: 'simo@test.com',
-      telephone: 33611111111, 
+      telephone: '33611111111', 
       userId: 'will'
     }];
   public stuff$ = new Subject<Physique[]>();
@@ -42,11 +40,9 @@ export class StuffService {
       }
     );
   }
-
   emitStuff() {
     this.stuff$.next(this.stuff);
   }
-
   getPhysiqueById(id: string) {
     return new Promise((resolve, reject) => {
       this.http.get('http://localhost:3000/api/stuff/' + id).subscribe(
@@ -59,7 +55,6 @@ export class StuffService {
       );
     });
   }
-
   createNewPhysique(physique: Physique) {
     return new Promise((resolve, reject) => {
       this.http.post('http://localhost:3000/api/stuff', physique).subscribe(
@@ -72,7 +67,6 @@ export class StuffService {
       );
     });
   }
-
   createNewPhysiqueWithFile(physique: Physique) {
     return new Promise((resolve, reject) => {
       const physiqueData = new FormData();
@@ -87,7 +81,6 @@ export class StuffService {
       );
     });
   }
-
   modifyPhysique(id: string, physique: Physique) {
     return new Promise((resolve, reject) => {
       this.http.put('http://localhost:3000/api/stuff/' + id, physique).subscribe(
@@ -100,9 +93,6 @@ export class StuffService {
       );
     });
   }
-
-
-
   deletePhysique(id: string) {
     return new Promise((resolve, reject) => {
       this.http.delete('http://localhost:3000/api/stuff/' + id).subscribe(

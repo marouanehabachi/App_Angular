@@ -1,26 +1,32 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 <p class="text-center" *ngIf="stuff.length <= 0 && !loading">aucune personne</p>
-<div class="stuff-grid" *ngIf="stuff.length >= 0">
-  <div class="physique-pane"
-       *ngFor="let physique of stuff"
-       [ngClass]="{'open': physique._id === chosenId}"
-       (click)="onProductClicked(physique._id)">
+<div class="" *ngIf="stuff.length >= 0">
+  <div class="physique-pane">
     <div class="physique-info">
-      
-      <table style="width:150%">
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Telephone</th>
-        </tr>
-        <tr>
-          <td>{{ physique.nom}}</td>
-          <td>{{ physique.prenom}}</td>
-          <td>{{ physique.mail}}</td>
-         <td>{{ physique.telephone}}</td>
-        </tr>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telephone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let physique of stuff; let i = index" [ngClass]="{'open': physique._id === chosenId}"
+          (click)="onProductClicked(physique._id)">
+            <th scope="row">{{ i }}</th>
+            <td>{{ physique.nom}}</td>
+            <td>{{ physique.prenom}}</td>
+            <td>{{ physique.mail}}</td>
+            <td>{{ physique.telephone}}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
 </div>
+<button class="btn-re" routerLink="/informationlog">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

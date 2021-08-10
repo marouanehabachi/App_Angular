@@ -1,8 +1,31 @@
-<p id="hello"> Bienvenue </p>
-<input id="signup" routerLink="../auth/signup" routerLinkActive="active"
-       class="styled" type="button" value="signup"
-       >
 
-<input id="login" routerLink="../auth/login" routerLinkActive="active"
-       class="styled" type="button" value="login">
-  
+<button class="btn-re" routerLink="/home">
+       <i class="fas fa-arrow-left text-light"></i>
+     </button>
+
+     <div class="row">
+       <div class="col-2">
+         <div class="card shadow border-0 text-center my-5">
+          <img src="../assets/icons/user.svg" class="img-card" alt="">
+          <h5 class="text-uppercase">admin</h5>
+        </div>
+       </div>
+
+      <div class="col-8 offset-md-1">
+        <div align="center" class="don d-flex justify-content-center">
+          <div align="center" routerLink="/auth/signup" role="button" class="btn-don-oui mx-4">
+            <span style="font-size:1.8rem !important"> S'enregistrer </span>
+          </div>
+          <div align="center" routerLink="/auth/login" role="button" class="btn-don mx-4">
+            <span style="font-size:1.8rem !important"> Se connecter </span>
+          </div>
+        </div>
+      </div>
+
+
+     </div>
+ 
+     <div class="bd-highlight">
+       <h6 id="ammiya" class="text-uppercase">by ammiya conseil</h6>
+     </div>
+ 

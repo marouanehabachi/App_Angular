@@ -1,36 +1,60 @@
-#montant{
-    position: absolute; 
-    left: 630px;
-    top: 250px;
+ #montant{
+    position: relative; 
+    /* left: 10px;  */
+    top: 100px;
+} 
+.don {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-#VALIDER{
-    position: absolute; 
-    left: 680px;
-    top: 290px;
-    color: rgb(5, 10, 10);
-    border-radius: 50%;
+
+.btn-don,
+.btn-don-valider {
+  padding: 2rem;
+  font-size: 2rem;
+  height: 27vh;
+  width: 27vh;
+  border: 3px solid #878787;
+  border-radius: 50rem;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
-#mt {
-  position: absolute;  
-  left: 575px;
-  top: 200px;
-  color: rgb(5, 10, 10); 
-  font-size: 200%;  
+
+.btn-don span,
+.btn-don-valider span {
+  text-decoration: none;
+  position: absolute;
+  top: 36%;
+  bottom: 36%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
 }
-  .styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: rgb(20, 63, 0);
-    text-shadow: 1px 1px 1px rgb(248, 248, 255); 
-    border-radius: 10px; 
-    background-color: rgb(232, 255, 221);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+
+.btn-don-valider:hover {
+  background: rgb(60, 177, 255);
+  color: white;
 }
+.fa-arrow-left {
+  font-size: 2rem;
+}
+
+.btn-re {
+  height: 5rem;
+  width: 3rem;
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  z-index: 1;
+  left: 0 !important;
+  top: 49%;
+}
+
+/*----------- Input -----------*/
+
+.form-control {
+  width: 25rem;
+}
+
+/*------- END Input -----------*/

@@ -1,4 +1,3 @@
-
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div id="log" class="col-sm-8 offset-sm-2 mt-2" *ngIf="!loading">
   <form [formGroup]="loginForm">
@@ -14,3 +13,6 @@
   </form>
   <p>{{ errorMessage }}</p>
 </div>
+<button class="btn-re" routerLink="/admin">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

@@ -1,4 +1,3 @@
-
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div id="NEW" *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2">
   <form [formGroup]="physiqueForm">
@@ -7,7 +6,7 @@
       <input type="text" id="nom" formControlName="nom" class="form-control">
     </div>
     <div class="form-group">
-      <label for="prenom">Prenom</label>
+      <label for="prenom">Prènom</label>
       <input type="text" id="prenom" formControlName="prenom" class="form-control">
     </div>
     <div class="form-group">
@@ -15,10 +14,17 @@
       <input type="text" id="mail" formControlName="mail" class="form-control">
     </div>
     <div class="form-group">
-      <label for="telephone">Numero Téléphone</label>
+      <label for="telephone">Numéro De Téléphone</label>
       <input type="number" id="telephone" class="form-control" formControlName="telephone">
     </div>
     <button routerLink="/payement" class="btn btn-primary" (click)="onSubmit()" [disabled]="physiqueForm.invalid">Valider</button>
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
   </form>
 </div>
+<br><br><br>
+<div class="text-center flex-grow-1 bd-highlight">
+  <h6 class="text-uppercase">Le remplissage du formulaire implique votre consentement pour recevoir de futures communications</h6>
+</div>
+<button class="btn-re" routerLink="/information">
+  <i class="fas fa-arrow-left text-light"></i>
+</button>

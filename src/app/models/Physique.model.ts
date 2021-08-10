@@ -3,6 +3,6 @@ export class Physique {
   nom: string;
   prenom: string;
   mail: string;
-  telephone: number;
+  telephone: string;
   userId: string;
 }

@@ -1,33 +1,11 @@
-<div>
-
-  <p id="hello">Bienvenue</p>
-
-
-  <input id="List" routerLink="/add" routerLinkActive="active" 
-   onclick="document.getElementById('moral').style.display='none';
-    document.getElementById('hello').style.display='none';
-     document.getElementById('List').style.display='none'; 
-     document.getElementById('admin').style.display='none'" 
-     class="styled" type="button" value="Personne physique">
-
-
-  <input id="moral" routerLink="/add" routerLinkActive="active"
-  onclick="document.getElementById('moral').style.display='none'; 
-  document.getElementById('hello').style.display='none'; 
-  document.getElementById('List').style.display='none'; 
-  document.getElementById('admin').style.display='none'"
-  class="styled"  type="button" value="Personne moral">
-  
-  <input id="admin" routerLink="/admin" routerLinkActive="active"
-   onclick="document.getElementById('moral').style.display='none';
-    document.getElementById('hello').style.display='none';
-     document.getElementById('List').style.display='none';
-      document.getElementById('admin').style.display='none'"
-      class="styled" type="button" value="admin">
-
-       
-</div>
-<p id="entreprise"> by AMMIYA CONSEIL</p>
-  
-<router-outlet></router-outlet>
-
+<section class="container-fluid px-5">
+  <div class="mx-5 my-5 d-flex justify-content-between">
+    <img src="../assets/icons/tactile.svg" class="img" alt="">
+    <div class="text-center">
+      <h4 id="hello" class="text-uppercase">je soutiens</h4>
+      <h1 id="hello">Nom de l'association</h1>
+    </div>
+    <p class="mr-auto">{{now | date: 'hh:mm:ss a'}}</p>
+  </div>
+  <router-outlet></router-outlet>
+</section>
